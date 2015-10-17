@@ -1,0 +1,55 @@
+body {
+	color: #696969;
+}
+#container {
+	width: 1060px;
+	margin: 0 auto;
+	min-height: 100%;
+}
+.header-top {
+  background-color: #696969;
+}
+.search-box {
+  background-color: #1face2;
+}
+.btn-primary {
+  border: none;
+  outline: none;
+}
+ul, li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: #696969;
+}
+nav {
+	overflow: hidden;
+
+	ul {
+		margin-left: -40px;
+		border-bottom: 1px solid #1face2;
+
+		li {
+			margin-right: 30px;
+			padding-bottom: 5px;
+		}
+
+		li.active, li:hover {
+				border-bottom: 3px solid #1face2;
+		}
+
+		li:hover a {
+			text-decoration: none;
+		}
+
+		li:last-child a {
+			
+		}
+	}
+}
+ul {
+	li {
+		display: inline-block;
+	}
+}

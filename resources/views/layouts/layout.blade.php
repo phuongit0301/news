@@ -5,18 +5,35 @@
 	<title>Document</title>
 	{!! Html::style(asset('css/app.css')) !!}
 	{!! Html::style(asset('css/style.css')) !!}
+	{!! Html::style(asset('css/font-awesome.css')) !!}
 </head>
 <body>
 	<div class="container" id="container">
 		<header id="header">
+			<div class="header-top">
+				<div class="row">
+					<div class="col-md-12">
+						<ul>
+							<li><a href="#"><i class="fa fa-phone"></i>0905-520-030</a></li>
+							<li><a href="#"><i class="fa fa-envelope"></i>phuongit0301@gmail.com</a></li>
+							<li><a href="#"><i class="fa fa-map-pin"></i>Danang</a></li>
+						</ul>
+					</div>
+				</div><!--end row-->
+			</div><!--end header-top-->
+			<div class="search-box">
+				<div class="row">
+					<div class="col-md-12" id="search" role="search">
+						<form method="get">
+							<input type="textbox" value="" name="txtSearch" placeholder="Search..." />
+							<input type="submit" name="Search" id="btnSearch" class="btn-primary" />
+						</form>
+					</div>
+				</div>
+			</div><!--end search-box -->
 			<div class="row">
-				<h1 class="col-md-2">NEWS</h1>
-				<div class="col-md-10 pull-right">
-					<form method="get">
-						<input type="textbox" value="" name="txtSearch" />
-						<input type="submit" name="Search" id="btnSearch" />
-					</form>
-				</div><!--end pull-right-->
+				<h1 class="col-md-12">NEWS</h1>
+				
 				<div class="col-md-12">
 					<nav id="primary-menu">
 						<ul>
@@ -30,6 +47,7 @@
 							<li><a href="#">SCIENCE</a></li>
 							<li><a href="#">MUSIC</a></li>
 							<li><a href="#">TECH</a></li>
+							<li class="search"><a href="#"><i class="fa fa-search"></i>Search</a></li>
 						</ul>
 					</nav>
 				</div>

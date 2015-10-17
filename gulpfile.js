@@ -17,10 +17,12 @@ var paths = {
 
 
 elixir(function(mix) {
+	mix.sass('style.scss')
+	mix.sass('layout.scss')
     mix.sass('app.scss')
 	.copy(paths.bootstrap + 'stylesheets/', 'resources/assets/sass')
-	.copy(paths.bootstrap + 'fonts/bootstrap', 'public/fonts')
+	.copy([paths.bootstrap + 'fonts/bootstrap', paths.bower_base_path + 'font-awesome/fonts'], 'public/fonts')
 	.copy(paths.bootstrap + 'javascripts/bootstrap.js', 'public/js/vendor/bootstrap.js')
 	.copy(paths.bower_base_path + 'jquery/dist/jquery.min.js', 'public/js/vendor/jquery.js')
-	.copy(paths.bower_base_path + 'font-awesome/css/font-awesome.min.css', 'public/css/vendor/font-awesome.css');
+	.copy(paths.bower_base_path + 'font-awesome/css/font-awesome.min.css', 'public/css/font-awesome.css');
 });
