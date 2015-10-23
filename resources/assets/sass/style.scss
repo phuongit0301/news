@@ -1,7 +1,7 @@
 body {
 	color: #696969;
 }
-#container {
+.container {
 	width: 1060px;
 	margin: 0 auto;
 	min-height: 100%;
@@ -9,12 +9,17 @@ body {
 .header-top {
   background-color: #696969;
 }
-.search-box {
-  background-color: #1face2;
+.no-margin {
+	margin: 0;
 }
-.btn-primary {
+.no-padding {
+	padding: 0;
+}
+.btn-submit-primary {
   border: none;
   outline: none;
+  text-indent: -9999px;
+  background: none;
 }
 ul, li {
 	list-style-type: none;

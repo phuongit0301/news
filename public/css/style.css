@@ -1,20 +1,176 @@
 body {
   color: #696969; }
-
-#container {
+.container {
   width: 1060px;
   margin: 0 auto;
   min-height: 100%; }
-
+.no-margin {
+  margin: 0;
+}
+.no-padding {
+  padding: 0;
+}
 .header-top {
-  background-color: #696969; }
+  background-color: #423b36; }
 
-.search-box {
-  background-color: #1face2; }
+.header-inner {
+  padding: 20px 0;
+}
+.header-search {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eee;
+    background-color: #fff;
+}
 
-.btn-primary {
-  border: none;
-  outline: none; }
+.header-search-filter {
+    position: relative;
+    float: left;
+    width: 134px;
+    margin-top: 10px;
+    border-right: 1px solid #eee;
+}
+
+.header-search-filter .jelect {
+    margin-bottom: 0;
+    vertical-align: middle;
+    border: none;
+}
+
+.jelect {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    color: #888;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.jelect-input {
+    display: none;
+}
+
+.header-search-filter .jelect-current, .header-search-filter .jelect-option {
+    font-family: Montserrat;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.jelect-current:focus {
+  outline: none;
+}
+.jelect-current {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 8px 33px 8px 16px;
+    overflow-wrap: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #222;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.jelect-current:before {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    content: '';
+}
+
+.jelect-current:after {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    bottom: 1px;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-top: 5px solid #222;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    content: '';
+}
+
+.jelect-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    margin-top: 1px;
+    display: none;
+    max-height: 194px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #fff;
+    box-shadow: 0 0 0 1px #ccc, 0 2px 4px rgba(0,0,0,0.25);
+    padding-left: 0;
+  }
+
+.header-search-form {
+    float: right;
+    width: 84%;
+}
+
+.product-search {
+    position: relative;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+}
+.ui-btn-primary {
+    background-color: #1face2;
+}
+
+.product-search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px 16px;
+    font-size: 13px;
+  }
+
+  .product-search-field {
+    width: 100%;
+    padding: 14px 100px 14px 10px;
+    border: none;
+}
+.product-search-field:focus {
+    outline-style: none;
+}
+.ui-btn-primary {
+    color: #fff;
+}
+
+.ui-btn {
+    padding: 18px 22px 15px;
+    font-family: Montserrat;
+    font-size: 11px;
+    border: none;
+    transition: all 0.3s;
+    text-align: center;
+    text-transform: uppercase;
+    }
 
 ul, li {
   list-style-type: none; }
@@ -22,12 +178,31 @@ ul, li {
 a {
   text-decoration: none;
   color: #696969; }
+.header-top ul {
+  margin-top: 10px;
+  padding: 0;
+}  
+.header-top ul li {
+  margin-right: 20px;
+}
+.header-top a {
+  color: #aaa;
+  font-size: 12px;
+}
+.header-top a:hover, .header-top a:focus {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.header-top i.fa {
+  padding-right: 5px;
+}
 
 nav {
   overflow: hidden; }
   nav ul {
     margin-left: -40px;
-    border-bottom: 1px solid #1face2; }
+    border-bottom: 1px solid #1face2;
+    margin-bottom: 0; }
     nav ul li {
       margin-right: 30px;
       padding-bottom: 5px; }
@@ -35,8 +210,16 @@ nav {
       border-bottom: 3px solid #1face2; }
     nav ul li:hover a {
       text-decoration: none; }
-
+    nav ul li.last {
+      float: right;
+      margin-right: 5px;
+    }
+    nav ul li.last:hover, nav ul li.last:focus {
+      border-bottom: none;
+    }
 ul li {
   display: inline-block; }
-
+.top-nav {
+  margin-bottom: 15px;
+}
 /*# sourceMappingURL=style.css.map */
