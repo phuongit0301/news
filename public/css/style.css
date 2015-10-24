@@ -10,6 +10,12 @@ body {
 .no-padding {
   padding: 0;
 }
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 .header-top {
   background-color: #423b36; }
 
@@ -217,9 +223,46 @@ nav {
     nav ul li.last:hover, nav ul li.last:focus {
       border-bottom: none;
     }
+.main-slider {
+  height: auto;
+  float: left;
+}
 ul li {
   display: inline-block; }
 .top-nav {
   margin-bottom: 15px;
+}
+.toggle li {
+  display: none;
+}
+.toggle li.current {
+  display: block;
+}
+.box-title {
+  background-color: #1face2;
+  padding: 5px 15px;
+}
+.box-title p {
+  margin: 0;
+}
+.box-title a {
+  color: #FFFFFF;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.bg-up {
+  z-index: 2;
+}
+.bg-down {
+  z-index: 1;
+}
+.slider .content {
+  bottom: 0;
+  left: 0;
+  width: 96%;
 }
 /*# sourceMappingURL=style.css.map */
