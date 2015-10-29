@@ -85,22 +85,22 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-7">
-						<div class="main-slider relative">
-							<div class="box-title absolute bg-up left">
+						<div class="main-slider slider-first clearfix">
+							<div class="box-title left">
 								<p><a href="#">Popular</a></p>
 							</div><!--end box-title-->
-							<div class="box-content relative bg-down left">
-								<ul class="slider toggle no-padding">
-									<li class="current relative">
+							<div class="box-content left">
+								<ul class="slider no-padding">
+									<li class="current">
 										{!! HTML::image('images/3.png', 'a picture', array('class' => 'thumb absolute')) !!}
-										<p class="absolute content">
+										<p class="content">
 											<a href="#">Tàu Trung Quốc cản trở Việt Nam cứu nạn 11 ngư dân</a>
 											Hơn nửa ngày vượt sóng cứu nạn ngư dân ở Hoàng Sa nhưng tàu SAR 412 không thể tiếp cận các thuyền viên do bị 2 tàu Trung Quốc cản trở.
 										</p>
 									</li>
-									<li class="relative">
+									<li>
 										{!! HTML::image('images/5.png', 'a picture', array('class' => 'thumb absolute')) !!}
-										<p class="absolute content">
+										<p class="content">
 											<a href="#">Tàu Trung Quốc cản trở Việt Nam cứu nạn 11 ngư dân</a>
 											Hơn nửa ngày vượt sóng cứu nạn ngư dân ở Hoàng Sa nhưng tàu SAR 412 không thể tiếp cận các thuyền viên do bị 2 tàu Trung Quốc cản trở.
 										</p>
@@ -114,8 +114,8 @@
 						</div><!--end main-slider-->
 					</div>
 					<div class="col-md-5">
-						<div class="slider-second relative">
-							<div class="box-title absolute"><p><a href="#">Latest</a></p></div>
+						<div class="main-slider slider-second">
+							<div class="box-title"><p><a href="#">Latest</a></p></div>
 							{!! HTML::image('images/6.png', 'a picture', array('class' => 'thumb')) !!}
 							<p class="absolute">
 								<a href="caption">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
