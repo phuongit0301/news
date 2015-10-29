@@ -92,7 +92,7 @@
 										{!! HTML::image('images/3.png', 'a picture', array('class' => 'thumb absolute')) !!}
 										<p class="content">
 											<a href="#">Tàu Trung Quốc cản trở Việt Nam cứu nạn 11 ngư dân</a>
-											Hơn nửa ngày vượt sóng cứu nạn ngư dân ở Hoàng Sa nhưng tàu SAR 412 không thể tiếp cận các thuyền viên do bị 2 tàu Trung Quốc cản trở.
+											Hơn nửa ngày vượt sóng cứu nạn ngư dân ở Hoàng Sa nhưng tàu SAR 412 không thể tiếp cận các thuy�?n viên do bị 2 tàu Trung Quốc cản trở.
 										</p>
 									</li>
 									<li>
@@ -100,7 +100,7 @@
 										{!! HTML::image('images/5.png', 'a picture', array('class' => 'thumb absolute')) !!}
 										<p class="content">
 											<a href="#">Tàu Trung Quốc cản trở Việt Nam cứu nạn 11 ngư dân</a>
-											Hơn nửa ngày vượt sóng cứu nạn ngư dân ở Hoàng Sa nhưng tàu SAR 412 không thể tiếp cận các thuyền viên do bị 2 tàu Trung Quốc cản trở.
+											Hơn nửa ngày vượt sóng cứu nạn ngư dân ở Hoàng Sa nhưng tàu SAR 412 không thể tiếp cận các thuy�?n viên do bị 2 tàu Trung Quốc cản trở.
 										</p>
 									</li>
 								</ul>
@@ -116,22 +116,22 @@
 								<p class="title"><a href="#">Latest</a></p>
 								{!! HTML::image('images/6.png', 'a picture', array('class' => 'thumb')) !!}
 								<p class="content">
-									<a href="caption">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
-									<span>Trước đề xuất của lãnh đạo cơ quan phòng chống tệ nạn xã hội TP HCM, đại diện các tỉnh thành như Nam Định, Hà Nội đều cho rằng cần thận trọng, nghiên cứu kỹ.</span>
+									<a href="caption">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+									<span>Trước đ�? xuất của lãnh đạo cơ quan phòng chống tệ nạn xã hội TP HCM, đại diện các tỉnh thành như Nam �?ịnh, Hà Nội đ�?u cho rằng cần thận tr�?ng, nghiên cứu kỹ.</span>
 								</p>
 							</div><!--end slider-second-->
 							<div class="main-slider slider slider-third">
 								<p class="title"><a href="#">Latest</a></p>
 								{!! HTML::image('images/31.png', 'a picture', array('class' => 'thumb')) !!}
 								<p class="content">
-									<a href="caption">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+									<a href="caption">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 								</p>
 							</div>
 							<div class="main-slider slider slider-third">
 								<p class="title"><a href="#">Latest</a></p>
 								{!! HTML::image('images/41.png', 'a picture', array('class' => 'thumb')) !!}
 								<p class="content">
-									<a href="caption">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+									<a href="caption">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 								</p>
 							</div>
 						</div><!--end slider-child-->
@@ -147,13 +147,13 @@
 						<div class="row">
 
 							<div class="col-md-6">
-								<h5>POPULAR NEWS</h5>
+								<h5 class="line-border"><span>POPULAR NEWS</span></h5>
 								<ul>
 									<li>
 										<a href="#">{!! HTML::image('images/51.png', 'a picture', array('class' => 'thumb')) !!}</a>
 										<p>
 											<span>10-10-2015</span>
-											<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+											<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 										</p>
 										<span>12 comments</span>
 									</li>
@@ -162,7 +162,7 @@
 										<a href="#">{!! HTML::image('images/51.png', 'a picture', array('class' => 'thumb')) !!}</a>
 										<p>
 											<span>10-10-2015</span>
-											<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+											<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 										</p>
 										<span>12 comments</span>
 									</li>
@@ -171,7 +171,7 @@
 										<a href="#">{!! HTML::image('images/51.png', 'a picture', array('class' => 'thumb')) !!}</a>
 										<p>
 											<span>10-10-2015</span>
-											<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+											<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 										</p>
 										<span>12 comments</span>
 									</li>
@@ -180,7 +180,7 @@
 										<a href="#">{!! HTML::image('images/51.png', 'a picture', array('class' => 'thumb')) !!}</a>
 										<p>
 											<span>10-10-2015</span>
-											<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+											<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 										</p>
 										<span>12 comments</span>
 									</li>
@@ -189,7 +189,7 @@
 										<a href="#">{!! HTML::image('images/51.png', 'a picture', array('class' => 'thumb')) !!}</a>
 										<p>
 											<span>10-10-2015</span>
-											<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+											<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 										</p>
 										<span>12 comments</span>
 									</li>
@@ -198,20 +198,20 @@
 										<a href="#">{!! HTML::image('images/51.png', 'a picture', array('class' => 'thumb')) !!}</a>
 										<p>
 											<span>10-10-2015</span>
-											<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+											<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 										</p>
 										<span>12 comments</span>
 									</li>
 								</ul>
 							</div><!--end col-md-6-->
 							<div class="col-md-6">
-								<h5>HOT NEWS</h5>
+								<h5><span>HOT NEWS</span></h5>
 								<ul>
 									<li>
 										<a href="#">{!! HTML::image('images/9.png', 'a picture', array('class' => 'thumb')) !!}</a>
 										<p>
 											<span>10-10-2015</span>
-											<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+											<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 										</p>
 										<span>12 comments</span>
 									</li>
@@ -220,7 +220,7 @@
 										<a href="#">{!! HTML::image('images/9.png', 'a picture', array('class' => 'thumb')) !!}</a>
 										<p>
 											<span>10-10-2015</span>
-											<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+											<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 										</p>
 										<span>12 comments</span>
 									</li>
@@ -229,7 +229,7 @@
 										<a href="#">{!! HTML::image('images/9.png', 'a picture', array('class' => 'thumb')) !!}</a>
 										<p>
 											<span>10-10-2015</span>
-											<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+											<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 										</p>
 										<span>12 comments</span>
 									</li>
@@ -238,7 +238,7 @@
 										<a href="#">{!! HTML::image('images/9.png', 'a picture', array('class' => 'thumb')) !!}</a>
 										<p>
 											<span>10-10-2015</span>
-											<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+											<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 										</p>
 										<span>12 comments</span>
 									</li>
@@ -247,7 +247,7 @@
 										<a href="#">{!! HTML::image('images/9.png', 'a picture', array('class' => 'thumb')) !!}</a>
 										<p>
 											<span>10-10-2015</span>
-											<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+											<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 										</p>
 										<span>12 comments</span>
 									</li>
@@ -256,7 +256,7 @@
 										<a href="#">{!! HTML::image('images/9.png', 'a picture', array('class' => 'thumb')) !!}</a>
 										<p>
 											<span>10-10-2015</span>
-											<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+											<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 										</p>
 										<span>12 comments</span>
 									</li>
@@ -274,14 +274,14 @@
 								<div class="row">
 									<div class="col-md-6">
 										{!! HTML::image('images/24.png', 'a picture', array('class' => 'thumb')) !!}
-										<h6><a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a></h6>
+										<h6><a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a></h6>
 										<span class="meta">
 											10-10-2015
 											<a href="#">meta1</a>
 											<a href="#">meta2</a>
 										</span>
 										<p>
-											Trước đề xuất của lãnh đạo cơ quan phòng chống tệ nạn xã hội TP HCM, đại diện các tỉnh thành như Nam Định, Hà Nội đều cho rằng cần thận trọng, nghiên cứu kỹ.
+											Trước đ�? xuất của lãnh đạo cơ quan phòng chống tệ nạn xã hội TP HCM, đại diện các tỉnh thành như Nam �?ịnh, Hà Nội đ�?u cho rằng cần thận tr�?ng, nghiên cứu kỹ.
 										</p>
 									</div>
 									<div class="col-md-6">
@@ -290,7 +290,7 @@
 												<a href="#">{!! HTML::image('images/9.png', 'a picture', array('class' => 'thumb')) !!}</a>
 												<p>
 													<span>10-10-2015</span>
-													<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+													<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 												</p>
 												<span>12 comments</span>
 											</li>
@@ -299,7 +299,7 @@
 												<a href="#">{!! HTML::image('images/9.png', 'a picture', array('class' => 'thumb')) !!}</a>
 												<p>
 													<span>10-10-2015</span>
-													<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+													<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 												</p>
 												<span>12 comments</span>
 											</li>
@@ -308,7 +308,7 @@
 												<a href="#">{!! HTML::image('images/9.png', 'a picture', array('class' => 'thumb')) !!}</a>
 												<p>
 													<span>10-10-2015</span>
-													<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+													<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 												</p>
 												<span>12 comments</span>
 											</li>
@@ -317,7 +317,7 @@
 												<a href="#">{!! HTML::image('images/9.png', 'a picture', array('class' => 'thumb')) !!}</a>
 												<p>
 													<span>10-10-2015</span>
-													<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+													<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 												</p>
 												<span>12 comments</span>
 											</li>
@@ -326,7 +326,7 @@
 												<a href="#">{!! HTML::image('images/9.png', 'a picture', array('class' => 'thumb')) !!}</a>
 												<p>
 													<span>10-10-2015</span>
-													<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+													<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 												</p>
 												<span>12 comments</span>
 											</li>
@@ -335,7 +335,7 @@
 												<a href="#">{!! HTML::image('images/9.png', 'a picture', array('class' => 'thumb')) !!}</a>
 												<p>
 													<span>10-10-2015</span>
-													<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+													<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 												</p>
 												<span>12 comments</span>
 											</li>
@@ -355,14 +355,14 @@
 								<div class="row">
 									<div class="col-md-6">
 										{!! HTML::image('images/24.png', 'a picture', array('class' => 'thumb')) !!}
-										<h6><a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a></h6>
+										<h6><a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a></h6>
 										<span class="meta">
 											10-10-2015
 											<a href="#">meta1</a>
 											<a href="#">meta2</a>
 										</span>
 										<p>
-											Trước đề xuất của lãnh đạo cơ quan phòng chống tệ nạn xã hội TP HCM, đại diện các tỉnh thành như Nam Định, Hà Nội đều cho rằng cần thận trọng, nghiên cứu kỹ.
+											Trước đ�? xuất của lãnh đạo cơ quan phòng chống tệ nạn xã hội TP HCM, đại diện các tỉnh thành như Nam �?ịnh, Hà Nội đ�?u cho rằng cần thận tr�?ng, nghiên cứu kỹ.
 										</p>
 									</div>
 									<div class="col-md-6">
@@ -371,7 +371,7 @@
 												<a href="#">{!! HTML::image('images/9.png', 'a picture', array('class' => 'thumb')) !!}</a>
 												<p>
 													<span>10-10-2015</span>
-													<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+													<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 												</p>
 												<span>12 comments</span>
 											</li>
@@ -380,7 +380,7 @@
 												<a href="#">{!! HTML::image('images/9.png', 'a picture', array('class' => 'thumb')) !!}</a>
 												<p>
 													<span>10-10-2015</span>
-													<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+													<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 												</p>
 												<span>12 comments</span>
 											</li>
@@ -389,7 +389,7 @@
 												<a href="#">{!! HTML::image('images/9.png', 'a picture', array('class' => 'thumb')) !!}</a>
 												<p>
 													<span>10-10-2015</span>
-													<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+													<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 												</p>
 												<span>12 comments</span>
 											</li>
@@ -398,7 +398,7 @@
 												<a href="#">{!! HTML::image('images/9.png', 'a picture', array('class' => 'thumb')) !!}</a>
 												<p>
 													<span>10-10-2015</span>
-													<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+													<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 												</p>
 												<span>12 comments</span>
 											</li>
@@ -407,7 +407,7 @@
 												<a href="#">{!! HTML::image('images/9.png', 'a picture', array('class' => 'thumb')) !!}</a>
 												<p>
 													<span>10-10-2015</span>
-													<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+													<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 												</p>
 												<span>12 comments</span>
 											</li>
@@ -416,7 +416,7 @@
 												<a href="#">{!! HTML::image('images/9.png', 'a picture', array('class' => 'thumb')) !!}</a>
 												<p>
 													<span>10-10-2015</span>
-													<a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+													<a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
 												</p>
 												<span>12 comments</span>
 											</li>
@@ -426,43 +426,43 @@
 							</div>
 
 							<div class="col-md-6">
-								<h5>BUSINESS NEWS</h5>
+								<h5><span>BUSINESS NEWS</span></h5>
 								<div class="block-content">
 									{!! HTML::image('images/24.png', 'a picture', array('class' => 'thumb')) !!}
-									<h6><a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a></h6>
+									<h6><a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a></h6>
 									<span class="meta">
 										10-10-2015
 										<a href="#">meta1</a>
 										<a href="#">meta2</a>
 									</span>
 									<p>
-										Trước đề xuất của lãnh đạo cơ quan phòng chống tệ nạn xã hội TP HCM, đại diện các tỉnh thành như Nam Định, Hà Nội đều cho rằng cần thận trọng, nghiên cứu kỹ.
+										Trước đ�? xuất của lãnh đạo cơ quan phòng chống tệ nạn xã hội TP HCM, đại diện các tỉnh thành như Nam �?ịnh, Hà Nội đ�?u cho rằng cần thận tr�?ng, nghiên cứu kỹ.
 									</p>
 								</div><!--end block-content-->
 
 								<div class="block-content">
 									{!! HTML::image('images/24.png', 'a picture', array('class' => 'thumb')) !!}
-									<h6><a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a></h6>
+									<h6><a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a></h6>
 									<span class="meta">
 										10-10-2015
 										<a href="#">meta1</a>
 										<a href="#">meta2</a>
 									</span>
 									<p>
-										Trước đề xuất của lãnh đạo cơ quan phòng chống tệ nạn xã hội TP HCM, đại diện các tỉnh thành như Nam Định, Hà Nội đều cho rằng cần thận trọng, nghiên cứu kỹ.
+										Trước đ�? xuất của lãnh đạo cơ quan phòng chống tệ nạn xã hội TP HCM, đại diện các tỉnh thành như Nam �?ịnh, Hà Nội đ�?u cho rằng cần thận tr�?ng, nghiên cứu kỹ.
 									</p>
 								</div><!--end block-content-->
 
 								<div class="block-content">
 									{!! HTML::image('images/24.png', 'a picture', array('class' => 'thumb')) !!}
-									<h6><a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a></h6>
+									<h6><a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a></h6>
 									<span class="meta">
 										10-10-2015
 										<a href="#">meta1</a>
 										<a href="#">meta2</a>
 									</span>
 									<p>
-										Trước đề xuất của lãnh đạo cơ quan phòng chống tệ nạn xã hội TP HCM, đại diện các tỉnh thành như Nam Định, Hà Nội đều cho rằng cần thận trọng, nghiên cứu kỹ.
+										Trước đ�? xuất của lãnh đạo cơ quan phòng chống tệ nạn xã hội TP HCM, đại diện các tỉnh thành như Nam �?ịnh, Hà Nội đ�?u cho rằng cần thận tr�?ng, nghiên cứu kỹ.
 									</p>
 								</div><!--end block-content-->
 							</div><!--end col-md-6-->
@@ -470,40 +470,40 @@
 								<h5>SPORT NEWS</h5>
 								<div class="block-content">
 									{!! HTML::image('images/24.png', 'a picture', array('class' => 'thumb')) !!}
-									<h6><a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a></h6>
+									<h6><a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a></h6>
 									<span class="meta">
 										10-10-2015
 										<a href="#">meta1</a>
 										<a href="#">meta2</a>
 									</span>
 									<p>
-										Trước đề xuất của lãnh đạo cơ quan phòng chống tệ nạn xã hội TP HCM, đại diện các tỉnh thành như Nam Định, Hà Nội đều cho rằng cần thận trọng, nghiên cứu kỹ.
+										Trước đ�? xuất của lãnh đạo cơ quan phòng chống tệ nạn xã hội TP HCM, đại diện các tỉnh thành như Nam �?ịnh, Hà Nội đ�?u cho rằng cần thận tr�?ng, nghiên cứu kỹ.
 									</p>
 								</div><!--end block-content-->
 
 								<div class="block-content">
 									{!! HTML::image('images/24.png', 'a picture', array('class' => 'thumb')) !!}
-									<h6><a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a></h6>
+									<h6><a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a></h6>
 									<span class="meta">
 										10-10-2015
 										<a href="#">meta1</a>
 										<a href="#">meta2</a>
 									</span>
 									<p>
-										Trước đề xuất của lãnh đạo cơ quan phòng chống tệ nạn xã hội TP HCM, đại diện các tỉnh thành như Nam Định, Hà Nội đều cho rằng cần thận trọng, nghiên cứu kỹ.
+										Trước đ�? xuất của lãnh đạo cơ quan phòng chống tệ nạn xã hội TP HCM, đại diện các tỉnh thành như Nam �?ịnh, Hà Nội đ�?u cho rằng cần thận tr�?ng, nghiên cứu kỹ.
 									</p>
 								</div><!--end block-content-->
 
 								<div class="block-content">
 									{!! HTML::image('images/24.png', 'a picture', array('class' => 'thumb')) !!}
-									<h6><a href="#">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a></h6>
+									<h6><a href="#">�?�? xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a></h6>
 									<span class="meta">
 										10-10-2015
 										<a href="#">meta1</a>
 										<a href="#">meta2</a>
 									</span>
 									<p>
-										Trước đề xuất của lãnh đạo cơ quan phòng chống tệ nạn xã hội TP HCM, đại diện các tỉnh thành như Nam Định, Hà Nội đều cho rằng cần thận trọng, nghiên cứu kỹ.
+										Trước đ�? xuất của lãnh đạo cơ quan phòng chống tệ nạn xã hội TP HCM, đại diện các tỉnh thành như Nam �?ịnh, Hà Nội đ�?u cho rằng cần thận tr�?ng, nghiên cứu kỹ.
 									</p>
 								</div><!--end block-content-->
 							</div><!--end col-md-6-->

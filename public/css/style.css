@@ -16,8 +16,19 @@ body {
     padding: 0;
 }
 
+h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+}
+
 .left {
     float: left;
+}
+
+.title a {
+    color: #FFFFFF;
 }
 
 .right {
@@ -302,6 +313,7 @@ ul li {
     margin-bottom: 0;
     color: #FFFFFF;
     background-color: rgba(52, 52, 52, 0.37);
+    font-size: 12px;
 }
 
 .slider .content a {
@@ -309,7 +321,7 @@ ul li {
     color: #FFFFFF;
     padding-bottom: 10px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .slider-nav {
@@ -339,7 +351,7 @@ ul li {
 }
 
 .slider-second .content span {
-    height: 40px;
+    height: 32px;
     overflow: hidden;
     display: block;
     width: 100%;
@@ -347,68 +359,29 @@ ul li {
 .slider-second .content span:after {
     content: "...";
 }
-/*.box-title {
-    background-color: #1face2;
-    padding: 5px 15px;
-    z-index: 2;
-    position: absolute;
-}
-
-.box-content {
-    position: relative;
-    width: 100%;
-}
-
-.box-title p {
-    margin: 0;
-}
-
-.box-title a {
-    color: #FFFFFF;
-}
-
-.slider {
-    position: absolute;
-    width: 100%;
-}
-
-.slider li {
-    display: none;
-}
-
-.slider li.current {
-    display: block;
-    position: absolute;
-    width: 100%;
-}
-
-.slider li.current img {
-    position: relative;
-    display: block;
-    width: 100%;
-}
-
-.slider .content {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    padding: 15px;
-    margin-bottom: 0;
-    color: #FFFFFF;
-    background-color: rgba(52, 52, 52, 0.37);
-}
-
-.content a {
-    display: block;
-    color: #FFFFFF;
+.slider-third p.content {
     padding-bottom: 10px;
-    font-weight: bold;
-    font-size: 14px;
+    padding-top: 10px;
+}
+.slider-third p.content a {
+    height: 18px;
+    overflow: hidden;
 }
 
-.slider-nav {
-    position: absolute;
-    top: 50%;
-}*/
-/*# sourceMappingURL=style.css.map */
+.slider-third p.content a:after {
+    content: "...";
+}
+
+/* content */
+section#content {
+    margin-top: 20px;
+}
+h5.line-border {
+    border-bottom: 1px solid #1face2;
+    width: 100%;
+    padding-bottom: 8px;
+}
+h5.line-border span {
+    border-bottom: 3px solid #1face2;
+    padding-bottom: 5px;
+}
