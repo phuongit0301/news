@@ -259,7 +259,6 @@ nav ul li.last:hover, nav ul li.last:focus {
 
 .main-slider {
     height: auto;
-    float: left;
     position: relative;
     width: 100%;
 }
@@ -272,7 +271,83 @@ ul li {
     margin-bottom: 15px;
 }
 
-.box-title {
+.slider li {
+    display: none;
+}
+
+.slider li.current {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.slider p.title {
+    background-color: #1face2;
+    padding: 5px 15px;
+    z-index: 2;
+    position: absolute;
+}
+
+.slider img {
+    display: block;
+    width: 100%;
+}
+
+.slider p.content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    color: #FFFFFF;
+    background-color: rgba(52, 52, 52, 0.37);
+}
+
+.slider .content a {
+    display: block;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.slider-nav {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+.slider-nav li.prev {
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+}
+
+.slider-nav li.next {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
+.slider-third {
+    width: 48%;
+    float: left;
+    margin-top: 20px;
+}
+.slider-child div.slider-third:nth-child(2) {
+    margin-right: 4%;
+}
+
+.slider-second .content span {
+    height: 40px;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+}
+.slider-second .content span:after {
+    content: "...";
+}
+/*.box-title {
     background-color: #1face2;
     padding: 5px 15px;
     z-index: 2;
@@ -335,5 +410,5 @@ ul li {
 .slider-nav {
     position: absolute;
     top: 50%;
-}
+}*/
 /*# sourceMappingURL=style.css.map */

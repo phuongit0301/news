@@ -86,12 +86,9 @@
 				<div class="row">
 					<div class="col-md-7">
 						<div class="main-slider slider-first clearfix">
-							<div class="box-title left">
-								<p><a href="#">Popular</a></p>
-							</div><!--end box-title-->
-							<div class="box-content left">
 								<ul class="slider no-padding">
 									<li class="current">
+										<p class="title"><a href="#">Popular</a></p>
 										{!! HTML::image('images/3.png', 'a picture', array('class' => 'thumb absolute')) !!}
 										<p class="content">
 											<a href="#">Tàu Trung Quốc cản trở Việt Nam cứu nạn 11 ngư dân</a>
@@ -99,6 +96,7 @@
 										</p>
 									</li>
 									<li>
+										<p><a href="#">Popular1</a></p>
 										{!! HTML::image('images/5.png', 'a picture', array('class' => 'thumb absolute')) !!}
 										<p class="content">
 											<a href="#">Tàu Trung Quốc cản trở Việt Nam cứu nạn 11 ngư dân</a>
@@ -110,32 +108,33 @@
 									<li class="prev"><a href="#"><i class="fa fa-arrow-circle-left fa-3x"></i></a></li>
 									<li class="next"><a href="#"><i class="fa fa-arrow-circle-right fa-3x"></i></a></li>
 								</ul>
-							</div><!--end box-content-->
 						</div><!--end main-slider-->
 					</div>
 					<div class="col-md-5">
-						<div class="main-slider slider-second">
-							<div class="box-title"><p><a href="#">Latest</a></p></div>
-							{!! HTML::image('images/6.png', 'a picture', array('class' => 'thumb')) !!}
-							<p class="absolute">
-								<a href="caption">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
-								Trước đề xuất của lãnh đạo cơ quan phòng chống tệ nạn xã hội TP HCM, đại diện các tỉnh thành như Nam Định, Hà Nội đều cho rằng cần thận trọng, nghiên cứu kỹ.
-							</p>
-						</div><!--end slider-second-->
-						<div class="slider-third">
-							<div class="box-title"><p><a href="#">Latest</a></p></div>
-							{!! HTML::image('images/31.png', 'a picture', array('class' => 'thumb')) !!}
-							<p>
-								<a href="caption">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
-							</p>
-						</div>
-						<div class="slider-third">
-							<div class="box-title"><p><a href="#">Latest</a></p></div>
-							{!! HTML::image('images/41.png', 'a picture', array('class' => 'thumb')) !!}
-							<p>
-								<a href="caption">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
-							</p>
-						</div>
+						<div class="slider-child clearfix">
+							<div class="main-slider slider slider-second">
+								<p class="title"><a href="#">Latest</a></p>
+								{!! HTML::image('images/6.png', 'a picture', array('class' => 'thumb')) !!}
+								<p class="content">
+									<a href="caption">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+									<span>Trước đề xuất của lãnh đạo cơ quan phòng chống tệ nạn xã hội TP HCM, đại diện các tỉnh thành như Nam Định, Hà Nội đều cho rằng cần thận trọng, nghiên cứu kỹ.</span>
+								</p>
+							</div><!--end slider-second-->
+							<div class="main-slider slider slider-third">
+								<p class="title"><a href="#">Latest</a></p>
+								{!! HTML::image('images/31.png', 'a picture', array('class' => 'thumb')) !!}
+								<p class="content">
+									<a href="caption">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+								</p>
+							</div>
+							<div class="main-slider slider slider-third">
+								<p class="title"><a href="#">Latest</a></p>
+								{!! HTML::image('images/41.png', 'a picture', array('class' => 'thumb')) !!}
+								<p class="content">
+									<a href="caption">Đề xuất lập khu dịch vụ nhạy cảm tại một số tỉnh</a>
+								</p>
+							</div>
+						</div><!--end slider-child-->
 					</div>
 				</div>
 			</div><!--end container-->
