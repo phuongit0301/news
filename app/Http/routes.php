@@ -14,3 +14,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('/layout', 'IndexController');
+
+Route::controllers([
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController',
+]);
+
+Route::get('/movies', 'Movies\MoviesController@index');
+
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
+
+    Route::get('/', [ 'as' => 'admin.layout.index', 'uses' => 'Admin\AdminController@index']);
+
+    Route::resource('movies',  'Movies\MoviesController');
+
+});

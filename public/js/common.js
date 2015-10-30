@@ -3,22 +3,36 @@ $(document).ready(function(){
 });
 
 var feature = {
-	setup: function(){
-        // name drop down child
-        var selectBoxSource      = $('#athleteSource');
-        var selectBoxDestination = $('#athleteDestination');
-        // id button compare submit
-        var btnCompare = $('#btnCompare');
-        // id drop down parent
-        var idSelectBox = $('#athleteSource option:selected').val();
+    loadDataNextPrev: function(next, prev) {
+        next.on('click', function() {
+            $('.slider li').css('display', 'none').removeClass('current');
+            $('.slider li').next().css('display', 'block').addClass('current');
+        });
 
-        //this.ajaxGetDataList(selectBoxDestination, idSelectBox);
-        this.renderData();
-        this.checkDropDown(selectBoxSource, selectBoxDestination, btnCompare);
-        this.getDataListSelected(selectBoxSource, selectBoxDestination);
-        this.compareData(btnCompare);
+        prev.on('click', function() {
+            $('.slider li').css('display', 'none').removeClass('current');
+            $('.slider li').prev().css('display', 'block').addClass('current');
+        });
     },
-    run: function(){
+
+    loadSearchForm: function() {
+        $('#toggle-search').on('click', function() {
+            if($('.header-search').css('display') == 'none') {
+                $('.header-search').show();
+            } else {
+                $('.header-search').hide();
+            }
+        });
+    },
+
+	setup: function() {
+        var next = $('.next');
+        var prev = $('.prev');
+
+        this.loadDataNextPrev(next, prev);
+        this.loadSearchForm();
+    },
+    run: function() {
         // Need to setup view first
         this.setup();
         // Other initialization 
