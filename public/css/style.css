@@ -15,6 +15,10 @@ body {
 .no-padding {
     padding: 0;
 }
+img {
+    width: 100%;
+    display: block;
+}
 
 h5 {
     text-transform: uppercase;
@@ -22,7 +26,16 @@ h5 {
     font-size: 16px;
     letter-spacing: 0.02em;
 }
-
+h5.text-normal {
+    font-weight: normal;
+    text-transform: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.4em;
+}
+h5.text-normal:first-letter {
+    text-transform: uppercase;
+}
 .left {
     float: left;
 }
@@ -34,7 +47,9 @@ h5 {
 .right {
     float: right;
 }
-
+.inline {
+    display: inline-block;
+}
 .header-top {
     background-color: #423b36;
 }
@@ -384,4 +399,62 @@ h5.line-border {
 h5.line-border span {
     border-bottom: 3px solid #1face2;
     padding-bottom: 5px;
+}
+.block-navbar {
+    display: inline-block;
+    float: right;
+}
+.wrapper li {
+    padding: 0 0 15px 0;
+    margin: 0 0 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+.wrapper li:last-child {
+    border-bottom: none;
+}
+.wrapper a:first-child {
+    width: 50%;
+    display: block;
+}
+
+.wrapper a img {
+    float: left;
+    margin-right: 10px;
+}
+
+.wrapper li p a {
+    font-size: 13px;
+    max-height: 36px;
+    margin-top: 5px;
+    display: block;
+}
+.wrapper li p a:after {
+    content: "...";
+}
+.wrapper li p span {
+    display: block;
+    font-size: 12px;
+    color: #1face2;
+}
+.meta {
+    margin-bottom: 10px;
+    display: block
+}
+.meta i:last-child {
+    float: right;
+}
+.meta i, .meta i a {
+    display: inline-block;
+    font-size: 12px;
+    color: #1face2;
+}
+
+.wrapper li .comment {
+    font-size: 13px;
+}
+.wrapper li .comment i {
+    margin-right: 10px;
+}
+.block-content {
+    margin: 15px 0 40px;
 }
