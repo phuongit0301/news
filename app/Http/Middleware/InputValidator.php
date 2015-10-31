@@ -16,7 +16,7 @@ class InputValidator
      */
     public function handle($request, Closure $next)
     {
-        dd($request->segments());
+        dd($request->input());
         /*$model = app($modelName);
         $validator = app('validator')->make($request->input(), $model->rules($request));
         if ($validator->fails()) {
