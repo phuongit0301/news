@@ -1,25 +1,24 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Auth;
 
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Auth;
 use App\Http\Models\User as User;
-use App\Http\Models\Category as Category;
 
-class AdminController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-
     public function index()
     {
-        return view("layouts.admin.index");
+        $userInformations = User::find(Auth::user()->id)->get();
+        return view('layouts.user.dashboard', ['userInformations']);
     }
 
     /**

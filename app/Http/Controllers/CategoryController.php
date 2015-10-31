@@ -1,15 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Auth;
-use App\Http\Models\User as User;
 use App\Http\Models\Category as Category;
 
-class AdminController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,7 +17,7 @@ class AdminController extends Controller
 
     public function index()
     {
-        return view("layouts.admin.index");
+        return view('layouts.category.index');
     }
 
     /**
@@ -29,7 +27,8 @@ class AdminController extends Controller
      */
     public function create()
     {
-        //
+        $listCategories = Category::lists('name', 'id')->prepend('Please Select Category');
+        return view('layouts.category.create', compact('listCategories'));
     }
 
     /**
@@ -40,7 +39,7 @@ class AdminController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**

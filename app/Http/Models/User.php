@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Http\Models;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -10,9 +10,7 @@ use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 
-class User extends Model implements AuthenticatableContract,
-                                    AuthorizableContract,
-                                    CanResetPasswordContract
+class User extends Model implements AuthenticatableContract, AuthorizableContract, CanResetPasswordContract
 {
     use Authenticatable, Authorizable, CanResetPassword;
 
@@ -35,5 +33,21 @@ class User extends Model implements AuthenticatableContract,
      *
      * @var array
      */
+
     protected $hidden = ['password', 'remember_token'];
+
+    public function role()
+    {
+        return $this->belongsToMany('App\Http\Models\Role');
+    }
+
+    public function category()
+    {
+        return $this->belongsToMany('App\Http\Models\Category', 'user_category');
+    }
+
+    public function post()
+    {
+        return $this->hasMany('App\Http\Models\Post');
+    }
 }
