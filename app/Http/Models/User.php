@@ -9,6 +9,7 @@ use Illuminate\Foundation\Auth\Access\Authorizable;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
+use Request;
 
 class User extends Model implements AuthenticatableContract, AuthorizableContract, CanResetPasswordContract
 {
@@ -35,6 +36,24 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
      */
 
     protected $hidden = ['password', 'remember_token'];
+
+    public static $rules = [
+        'first_name' => 'required|min:2|max:255',
+        'last_name' => 'required|min:2|max:255',
+        'email' => 'required|email|max:255|unique:users',
+        'password' => 'required|between:6,30|confirmed'
+    ];
+
+    public function rules(Request $request)
+    {
+        return [
+            'first_name' => 'required|min:2|max:255',
+            'last_name' => 'required|min:2|max:255',
+            'email' => 'required|email|max:255|unique:users',
+            'password' => 'required|between:6,30|confirmed'
+        ];
+    }
+
 
     public function role()
     {

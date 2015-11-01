@@ -32,6 +32,8 @@
     <!-- Main content -->
     <section class="content">
       <!-- Content Here -->
+        @include('layouts.admin.error-notification')
+
         @yield('content')
       <!-- End Content -->
     </section><!-- /.content -->

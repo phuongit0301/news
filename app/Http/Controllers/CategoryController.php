@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Requests;
+use App\Http\Requests\CategoryRequest;
 use App\Http\Controllers\Controller;
 use App\Http\Models\Category as Category;
 
@@ -17,7 +17,8 @@ class CategoryController extends Controller
 
     public function index()
     {
-        return view('layouts.category.index');
+        $listCategories = Category::get();
+        return view('category.index', compact('listCategories'));
     }
 
     /**
@@ -27,8 +28,9 @@ class CategoryController extends Controller
      */
     public function create()
     {
+        $category = new Category();
         $listCategories = Category::lists('name', 'id')->prepend('Please Select Category');
-        return view('layouts.category.create', compact('listCategories'));
+        return view('category.create', compact('category', 'listCategories'));
     }
 
     /**
@@ -37,9 +39,14 @@ class CategoryController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CategoryRequest $request)
     {
-
+        try {
+            Category::create($request->all());
+        } catch (Exception $e) {
+            echo 'Error Add Category: '. $e->getMessage();
+        }
+        return redirect('admin/categories')->with('message','Category successfully added!');
     }
 
     /**
@@ -50,7 +57,8 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
-        //
+        $category = Category::findOrFail($id);
+        return view('category.show', compact('category'));
     }
 
     /**
@@ -61,7 +69,9 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $category = Category::findOrFail($id);
+        $listCategories = Category::where('id', '<>', $category->id)->lists('name', 'id')->prepend('Please Select Category');
+        return view('category.edit', compact('category', 'listCategories'));
     }
 
     /**
@@ -71,9 +81,15 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(CategoryRequest $request, $id)
     {
-        //
+        try {
+            $input = $request->except(['_method', '_token']);
+            Category::where('id', $id)->update($input);
+        } catch (Exception $e) {
+            echo 'Error Update Category: '. $e->getMessage();
+        }
+        return redirect('admin/categories')->with('message', 'Category successfully updated!');
     }
 
     /**
@@ -84,6 +100,8 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $category = Category::findOrFail($id);
+        $category->delete();
+        return redirect('admin/categories')->with('message', 'Category successfully delete!');
     }
 }
