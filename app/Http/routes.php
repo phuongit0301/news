@@ -11,7 +11,7 @@
 */
 
 
-Route::resource('/layout', 'IndexController');
+Route::resource('/', 'IndexController');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',

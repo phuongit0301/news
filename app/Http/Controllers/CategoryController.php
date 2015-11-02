@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\CategoryRequest;
 use App\Http\Controllers\Controller;
-use App\Http\Models\Category as Category;
+use App\Http\Models\Category;
+use App\Http\Models\User;
+use Auth;
 
 class CategoryController extends Controller
 {
@@ -17,7 +19,7 @@ class CategoryController extends Controller
 
     public function index()
     {
-        $listCategories = Category::get();
+        $listCategories = Category::orderBy('sort')->get();
         return view('category.index', compact('listCategories'));
     }
 
@@ -42,7 +44,7 @@ class CategoryController extends Controller
     public function store(CategoryRequest $request)
     {
         try {
-            Category::create($request->all());
+            User::find(Auth::user()->id)->category()->create($request->all());
         } catch (Exception $e) {
             echo 'Error Add Category: '. $e->getMessage();
         }
@@ -85,7 +87,7 @@ class CategoryController extends Controller
     {
         try {
             $input = $request->except(['_method', '_token']);
-            Category::where('id', $id)->update($input);
+            Category::findOrFail($id)->update($input);
         } catch (Exception $e) {
             echo 'Error Update Category: '. $e->getMessage();
         }

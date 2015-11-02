@@ -19,8 +19,8 @@
     {!! Form::text('sort',$category->sort,['class'=>'form-control']) !!}
 </div>
 <div class="form-group">
-    {!! link_to_route('admin.categories.index', 'Go back to all categories', [], ['class' => 'btn btn-info']) !!}
-    {!! Form::submit('Update', ['class' => 'btn btn-primary form-control']) !!}
+    {!! link_to_route('admin.categories.index', 'Go Back', [], ['class' => 'btn btn-info']) !!}
+    {!! Form::submit($label, ['class' => 'btn btn-primary']) !!}
 </div>
 @section('scripts')
     <script src="{{ asset('js/global.js') }}"></script>

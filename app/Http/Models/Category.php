@@ -14,6 +14,6 @@ class Category extends Model
 
     public function user()
     {
-        return $this->belongsToMany('App\Models\User', 'user_category');
+        return $this->belongsToMany('App\Models\User', 'user_category')->withTimestamps();
     }
 }

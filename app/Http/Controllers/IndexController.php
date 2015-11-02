@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Models\User;
+use App\Http\Models\Category;
+use Auth;
 
 class IndexController extends Controller
 {
@@ -15,7 +18,8 @@ class IndexController extends Controller
      */
     public function index()
     {
-        return view('layouts.layout');
+        $menus = User::find(Auth::user()->id)->category()->get();
+        return view('layouts.layout', compact('menus'));
     }
 
     /**

@@ -5,7 +5,7 @@
     <h1>Create Category</h1>
 
     {!! Form::open(['route' => 'admin.categories.store', 'method' => 'POST']) !!}
-        @include('category._form', $category)
+        @include('category._form', [$label='Create'])
     {!! Form::close() !!}
 
 @endsection

@@ -44,15 +44,9 @@
 						<nav id="primary-menu">
 							<ul>
 								<li class="active"><a href="#">HOME</a></li>
-								<li><a href="#">PAGES</a></li>
-								<li><a href="#">WORLD</a></li>
-								<li><a href="#">BUSINESS</a></li>
-								<li><a href="#">POLITICS</a></li>
-								<li><a href="#">SPORTS</a></li>
-								<li><a href="#">HEALTH</a></li>
-								<li><a href="#">SCIENCE</a></li>
-								<li><a href="#">MUSIC</a></li>
-								<li><a href="#">TECH</a></li>
+								@foreach($menus as $menu)
+									<li><a href="{!! $menu->slug !!}">{{ $menu->name }}</a></li>
+								@endforeach
 								<li class="last"><a id="toggle-search" href="#"><i class="fa fa-search fa-lg"></i></a></li>
 							</ul>
 						</nav>

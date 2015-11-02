@@ -8,7 +8,9 @@
     <script src="{{ asset('dist/js/app.min.js') }}"></script>
 
     <script src="{{ asset('plugins/iCheck/icheck.min.js') }}"></script>
-    
+
+    <script src="{{ asset('js/angular.min.js') }}"></script>
+
     <script>
       $(function () {
         $('input').iCheck({
