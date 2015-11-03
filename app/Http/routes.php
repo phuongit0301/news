@@ -12,6 +12,8 @@
 
 
 Route::resource('/', 'IndexController');
+Route::get('/{slug}', 'CategoryController@index');
+Route::get('/{slugCategory}/{slugPost}', 'PostController@index');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',
@@ -28,5 +30,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
 
     Route::resource('movies',  'Movies\MoviesController');
 
-    Route::resource('categories', 'CategoryController');
+    Route::resource('categories', 'Admin\CategoryController');
+
+    Route::resource('posts', 'Admin\PostController');
 });

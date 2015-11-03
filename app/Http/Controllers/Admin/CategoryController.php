@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
+
+use App\Http\Requests;
 use App\Http\Requests\CategoryRequest;
 use App\Http\Controllers\Controller;
 use App\Http\Models\Category;
@@ -17,7 +19,7 @@ class CategoryController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function index($slug)
+    public function index()
     {
         $listCategories = Category::orderBy('sort')->get();
         return view('category.index', compact('listCategories'));
@@ -32,7 +34,7 @@ class CategoryController extends Controller
     {
         $category = new Category();
         $listCategories = Category::lists('name', 'id')->prepend('Please Select Category');
-        return view('category.create', compact('category', 'listCategories'));
+        return view('admin.category.create', compact('category', 'listCategories'));
     }
 
     /**
@@ -60,7 +62,7 @@ class CategoryController extends Controller
     public function show($id)
     {
         $category = Category::findOrFail($id);
-        return view('category.show', compact('category'));
+        return view('admin.category.show', compact('category'));
     }
 
     /**
@@ -73,7 +75,7 @@ class CategoryController extends Controller
     {
         $category = Category::findOrFail($id);
         $listCategories = Category::where('id', '<>', $category->id)->lists('name', 'id')->prepend('Please Select Category');
-        return view('category.edit', compact('category', 'listCategories'));
+        return view('admin.category.edit', compact('category', 'listCategories'));
     }
 
     /**
