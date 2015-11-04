@@ -27,7 +27,7 @@ class Post extends Model
         return $this->belongsToMany('App\Models\Tag');
     }
 
-    public static function getPostFromWebsite($htmlDom, $html)
+    /*public static function getPostFromWebsite($htmlDom, $html)
     {
         $data = json_decode($html, TRUE);
         echo "<pre>";
@@ -48,5 +48,5 @@ class Post extends Model
                 dd($content);
             }
         }
-    }
+    }*/
 }

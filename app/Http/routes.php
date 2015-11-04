@@ -12,8 +12,8 @@
 
 
 Route::resource('/', 'IndexController');
-Route::get('/{slug}', 'CategoryController@index');
-Route::get('/{slugCategory}/{slugPost}', 'PostController@index');
+Route::get('tin-tuc/{slug}', 'CategoryController@index');
+//Route::get('categories/{slugCategory}/{slugPost}', 'PostController@index');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',

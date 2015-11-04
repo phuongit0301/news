@@ -28,11 +28,11 @@ class PostController extends Controller
      */
     public function create()
     {
-        $htmlDom = new HtmlDom();
+        /*$htmlDom = new HtmlDom();
         $html = $htmlDom->file_get_html('http://vnexpress.net');
-        Post::getPostFromWebsite($htmlDom, $html);
-        /*$post = new Post();
-        return view('admin.post.create', compact('post'));*/
+        Post::getPostFromWebsite($htmlDom, $html);*/
+        $post = new Post();
+        return view('admin.post.create', compact('post'));
     }
 
     /**

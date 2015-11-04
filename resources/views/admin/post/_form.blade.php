@@ -20,4 +20,8 @@
 </div>
 @section('scripts')
     <script src="{{ asset('js/global.js') }}"></script>
+    <script src="{{ asset('js/ckeditor/ckeditor.js') }}"></script>
+    <script>
+        CKEDITOR.replace( 'content' );
+    </script>
 @endsection
