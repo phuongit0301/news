@@ -33,4 +33,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('categories', 'Admin\CategoryController');
 
     Route::resource('posts', 'Admin\PostController');
+
+    Route::post('files/upload', ['uses' => 'Admin\FileController@fileUpload', 'as' => 'files.upload']);
+    Route::get('files/list', ['uses' => 'Admin\FileController@fileList', 'as' => 'files.list']);
 });

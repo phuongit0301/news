@@ -22,6 +22,9 @@
     <script src="{{ asset('js/global.js') }}"></script>
     <script src="{{ asset('js/ckeditor/ckeditor.js') }}"></script>
     <script>
-        CKEDITOR.replace( 'content' );
+        CKEDITOR.replace( 'content', {
+            filebrowserBrowseUrl: "{{ route('files.list') }}",
+            filebrowserUploadUrl: "{{ route('files.upload', ['_token' => csrf_token()]) }}"
+        });
     </script>
 @endsection

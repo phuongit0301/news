@@ -27,6 +27,11 @@ class Post extends Model
         return $this->belongsToMany('App\Models\Tag');
     }
 
+    public function file()
+    {
+        return $this->hasMany('App\Model\File');
+    }
+
     /*public static function getPostFromWebsite($htmlDom, $html)
     {
         $data = json_decode($html, TRUE);
