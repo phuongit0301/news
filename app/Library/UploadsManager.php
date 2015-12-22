@@ -36,6 +36,7 @@ class UploadsManager
         $breadcrumbs = array_slice($breadcrumbs, 0, -1);
         
         $subfolders = [];
+
         foreach (array_unique($this->disk->directories($folder)) as $subfolder) {
             $subfolders["/$subfolder"] = basename($subfolder);
         }

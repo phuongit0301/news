@@ -3,6 +3,10 @@
     {!! Form::text('title', $post->title, ['class' => 'form-control', 'id' => 'name']) !!}
 </div>
 <div class="form-group">
+    {!! Form::label('short-content', 'Short Content:') !!}
+    {!! Form::textarea('short_content', $post->short_content, ['class' => 'form-control', 'id' => 'short-content']) !!}
+</div>
+<div class="form-group">
     {!! Form::label('Content', 'Content:') !!}
     {!! Form::textarea('content', $post->content, ['class' => 'form-control', 'id' => 'content']) !!}
 </div>

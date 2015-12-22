@@ -21,7 +21,6 @@ class FileController extends Controller
 
     public function fileUpload(Request $request)
     {
-        dd($request);
         $year = Carbon::now()->year;
         $month = Carbon::now()->month;
         $destinationPath = 'uploads/'.$year.'/'.$month;

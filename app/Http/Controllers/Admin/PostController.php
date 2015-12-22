@@ -7,7 +7,9 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Http\Models\Post;
+use App\Http\Models\User;
 use App\Library\HtmlDom;
+use Auth;
 
 class PostController extends Controller
 {
@@ -18,7 +20,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        $posts = Post::all();
+        return view('admin.post.index', compact('posts'));
     }
 
     /**
@@ -43,7 +46,12 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        
+        try {
+            User::find(Auth::user()->id)->post()->create($request->all());
+        } catch (Exception $e) {
+            echo 'Error Add Post: '. $e->getMessage();
+        }
+        return redirect('admin/posts')->with('message','Post successfully added!');
     }
 
     /**
@@ -54,7 +62,8 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        //
+        $post = Post::findOrFail($id);
+        return view('admin.post.show', compact('post'));
     }
 
     /**
@@ -65,7 +74,9 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-        //
+        $post = Post::findOrFail($id);
+        $nameUser = User::where('id', $post->user_id)->lists('first_name');
+        return view('admin.post.edit', compact('post', 'nameUser'));
     }
 
     /**
@@ -77,7 +88,13 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        try {
+            $input = $request->except(['_method', '_token']);
+            Post::findOrFail($id)->update($input);
+        } catch (Exception $e) {
+            echo 'Error Update Category: '. $e->getMessage();
+        }
+        return redirect('admin/post')->with('message', 'Post successfully updated!');
     }
 
     /**

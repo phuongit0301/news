@@ -10,7 +10,9 @@
               <img src="{{ asset('dist/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
-              <p>Alexander Pierce</p>
+              @if (!Auth::guest())
+                <p>{{ Auth::user()->first_name }}</p>
+              @endif
               <!-- Status -->
               <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
@@ -42,7 +44,7 @@
                     <li><a href="#">Link in level 2</a></li>
                   </ul>
                 </li>--}}
-                <li>{{ $category->name }}</li>
+                <li @if(Request::is($category->slug)) class="active" @endif><a href="/{{ str_replace('*', '', $category->slug)}}" class="treeview">{{ $category->name }}</a></li>
               @endforeach
             @endif
           </ul><!-- /.sidebar-menu -->

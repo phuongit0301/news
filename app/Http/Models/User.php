@@ -57,16 +57,16 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
 
     public function role()
     {
-        return $this->belongsToMany('App\Http\Models\Role');
+        return $this->belongsToMany(Role::class);
     }
 
     public function category()
     {
-        return $this->belongsToMany('App\Http\Models\Category', 'user_category')->withTimestamps();
+        return $this->belongsToMany(Category::class, 'user_category')->withTimestamps();
     }
 
     public function post()
     {
-        return $this->hasMany('App\Http\Models\Post');
+        return $this->hasMany(Post::class);
     }
 }
