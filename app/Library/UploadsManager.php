@@ -11,7 +11,7 @@ class UploadsManager
     protected $mimeDetect;
     
     public function __construct(PhpRepository $mimeDetect) {
-        $this->disk = Storage::disk(config('blog.uploads.storage'));
+        $this->disk = Storage::disk(config('files.uploads.storage'));
         $this->mimeDetect = $mimeDetect;
     }
     
@@ -89,7 +89,7 @@ class UploadsManager
      * Return the full web path to a file
      */
     public function fileWebpath($path) {
-        $path = rtrim(config('blog.uploads.webpath'), '/') . '/' . ltrim($path, '/');
+        $path = rtrim(config('files.uploads.webpath'), '/') . '/' . ltrim($path, '/');
         return url($path);
     }
     
@@ -113,4 +113,61 @@ class UploadsManager
     public function fileModified($path) {
         return Carbon::createFromTimestamp($this->disk->lastModified($path));
     }
+
+    public function createDirectory($folder)
+  {
+    $folder = $this->cleanFolder($folder);
+
+    if ($this->disk->exists($folder)) {
+      return "Folder '$folder' aleady exists.";
+    }
+
+    return $this->disk->makeDirectory($folder);
+  }
+
+  /**
+   * Delete a directory
+   */
+  public function deleteDirectory($folder)
+  {
+    $folder = $this->cleanFolder($folder);
+
+    $filesFolders = array_merge(
+      $this->disk->directories($folder),
+      $this->disk->files($folder)
+    );
+    if (! empty($filesFolders)) {
+      return "Directory must be empty to delete it.";
+    }
+
+    return $this->disk->deleteDirectory($folder);
+  }
+
+  /**
+   * Delete a file
+   */
+  public function deleteFile($path)
+  {
+    $path = $this->cleanFolder($path);
+
+    if (! $this->disk->exists($path)) {
+      return "File does not exist.";
+    }
+
+    return $this->disk->delete($path);
+  }
+
+  /**
+   * Save a file
+   */
+  public function saveFile($path, $content)
+  {
+    $path = $this->cleanFolder($path);
+
+    if ($this->disk->exists($path)) {
+      return "File already exists.";
+    }
+
+    return $this->disk->put($path, $content);
+  }
 }
