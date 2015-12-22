@@ -24,7 +24,10 @@
     <script>
         CKEDITOR.replace( 'content', {
             filebrowserBrowseUrl: "{{ route('files.list') }}",
-            filebrowserUploadUrl: "{{ route('files.upload', ['_token' => csrf_token()]) }}"
+            filebrowserImageBrowseUrl: "{{ route('files.list', ['type' => 'images']) }}",
+            filebrowserUploadUrl: "{{ route('files.upload', ['_token' => csrf_token()]) }}",
+            filebrowserImageUploadUrl: "{{ route('files.upload', ['_token' => csrf_token(), 'type' => 'images']) }}",
+            extraPlugins: "imageuploader"
         });
     </script>
 @endsection

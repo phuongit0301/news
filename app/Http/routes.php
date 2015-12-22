@@ -36,4 +36,6 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
 
     Route::post('files/upload', ['uses' => 'Admin\FileController@fileUpload', 'as' => 'files.upload']);
     Route::get('files/list', ['uses' => 'Admin\FileController@fileList', 'as' => 'files.list']);
+
+    Route::get('/upload', ['uses' => 'Admin\UploadController@index', 'as' => 'admin.upload']);
 });

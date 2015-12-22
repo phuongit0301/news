@@ -12,13 +12,16 @@ use Storage;
 
 class FileController extends Controller
 {
-    public function fileList()
+    public function fileList(Request $request)
     {
-        echo 123;
+        $funcNum = $request['CKEditorFuncNum'];
+        $filesList = File::all();
+        return view('admin.file.list', compact('filesList', 'funcNum'));
     }
 
     public function fileUpload(Request $request)
     {
+        dd($request);
         $year = Carbon::now()->year;
         $month = Carbon::now()->month;
         $destinationPath = 'uploads/'.$year.'/'.$month;
