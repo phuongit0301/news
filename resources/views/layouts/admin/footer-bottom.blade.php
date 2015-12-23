@@ -11,6 +11,10 @@
 
     <script src="{{ asset('js/angular.min.js') }}"></script>
 
+    <script src="{{ asset('js/vendor/jquery.dataTables.min.js') }}"></script>
+
+    <script src="{{ asset('js/vendor/dataTables.bootstrap.min.js') }}"></script>
+
     <script>
       $(function () {
         $('input').iCheck({

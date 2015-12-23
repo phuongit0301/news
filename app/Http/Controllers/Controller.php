@@ -19,7 +19,9 @@ abstract class Controller extends BaseController
 
     public function __construct()
     {
-        $this->categories = User::find(Auth::user()->id)->category()->get();
-        View::share('categories', $this->categories);
+    	if(Auth::check()) {
+	        $this->categories = User::find(Auth::user()->id)->category()->get();
+	        View::share('categories', $this->categories);
+    	}
     }
 }

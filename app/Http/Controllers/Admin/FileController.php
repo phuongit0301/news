@@ -35,7 +35,7 @@ class FileController extends Controller
         $fileStore->path = $destinationPath;
         $fileStore->save();
 
-        $file->move($destinationPath, $filename);
+        $file->move($destinationPath, $file->getClientOriginalName());
 
         return redirect('/admin/files/list')->with('message', 'You just add uploaded image!');
     }

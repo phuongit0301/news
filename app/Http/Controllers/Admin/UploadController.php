@@ -8,6 +8,8 @@ use App\Http\Controllers\Controller;
 use App\Library\UploadsManager;
 use App\Http\Requests\UploadFileRequest;
 use App\Http\Requests\UploadNewFolderRequest;
+use Illuminate\Support\Facades\File;
+use Input;
 
 class UploadController extends Controller
 {
@@ -78,20 +80,21 @@ class UploadController extends Controller
     /**
      * Upload new file
      */
-    public function uploadFile(UploadFileRequest $request) {
-        $file = $_FILES['file'];
-        $fileName = $request->get('file_name');
-        $fileName = $fileName ? : $file['name'];
-        $path = str_finish($request->get('folder'), '/') . $fileName;
-        $content = File::get($file['tmp_name']);
-        
-        $result = $this->manager->saveFile($path, $content);
-        
-        if ($result === true) {
-            return redirect()->back()->withSuccess("File '$fileName' uploaded.");
+    public function uploadFile(UploadFileRequest $request) 
+    {
+        if ($request->hasFile('file')) {
+            $file = $request->file('file');
+            $fileName = $file->getClientOriginalName();
+            $path = str_finish($request->get('folder'), '/') . $fileName;
+            $content = File::get($_FILES['file']['tmp_name']);
+            $result = $this->manager->saveFile($path, $content);
+            
+            if ($result === true) {
+                return redirect()->back()->withSuccess("File '$fileName' uploaded.");
+            }
+            
+            $error = $result ? : "An error occurred uploading file.";
+            return redirect()->back()->withErrors([$error]);
         }
-        
-        $error = $result ? : "An error occurred uploading file.";
-        return redirect()->back()->withErrors([$error]);
     }
 }

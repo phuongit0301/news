@@ -12,7 +12,7 @@ class UploadFileRequest extends Request
      * @return bool
      */
     public function authorize() {
-        return false;
+        return true;
     }
     
     /**
@@ -21,6 +21,9 @@ class UploadFileRequest extends Request
      * @return array
      */
     public function rules() {
-        return ['file' => 'required', 'folder' => 'required',];
+        return [
+                        'file' => 'required', 
+                        'folder' => 'required'
+                ];
     }
 }

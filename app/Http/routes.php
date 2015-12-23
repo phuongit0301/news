@@ -11,7 +11,7 @@
 |
 */
 
-Route::resource('/', 'IndexController');
+Route::resource('/', 'Frontend\IndexController');
 Route::get('tin-tuc/{slug}', 'CategoryController@index');
 
 //Route::get('categories/{slugCategory}/{slugPost}', 'PostController@index');
@@ -36,8 +36,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::get('/upload', ['uses' => 'Admin\UploadController@index', 'as' => 'admin.upload']);
     
     // Add the following routes
-    Route::post('upload/file', 'UploadController@uploadFile');
-    Route::delete('upload/file', 'UploadController@deleteFile');
-    Route::post('upload/folder', 'UploadController@createFolder');
-    Route::delete('upload/folder', 'UploadController@deleteFolder');
+    Route::post('upload/file', 'Admin\UploadController@uploadFile');
+    Route::delete('upload/file', 'Admin\UploadController@deleteFile');
+    Route::post('upload/folder', 'Admin\UploadController@createFolder');
+    Route::delete('upload/folder', 'Admin\UploadController@deleteFolder');
 });

@@ -6,7 +6,6 @@
     {{-- Top Bar --}}
     <div class="row page-title-row">
       <div class="col-md-6">
-        <h3 class="pull-left">Uploads  </h3>
         <div class="pull-left">
           <ul class="breadcrumb">
             @foreach ($breadcrumbs as $path => $disp)
