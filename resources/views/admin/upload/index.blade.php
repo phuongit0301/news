@@ -2,7 +2,6 @@
 
 @section('content')
   <div class="container-fluid">
-
     {{-- Top Bar --}}
     <div class="row page-title-row">
       <div class="col-md-6">
