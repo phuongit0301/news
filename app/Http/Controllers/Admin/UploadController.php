@@ -80,11 +80,12 @@ class UploadController extends Controller
     /**
      * Upload new file
      */
-    public function uploadFile(UploadFileRequest $request) 
+    public function uploadFile(Request $request) 
     {
-        if ($request->hasFile('file')) {
-            $file = $request->file('file');
-            $fileName = $file->getClientOriginalName();
+        var_dump($_FILES);exit;
+            $file = $_FILES['file'];
+            $fileName = $request->get('file_name');
+            $fileName = $fileName ?: $file['name'];
             $path = str_finish($request->get('folder'), '/') . $fileName;
             $content = File::get($_FILES['file']['tmp_name']);
             $result = $this->manager->saveFile($path, $content);
@@ -95,6 +96,5 @@ class UploadController extends Controller
             
             $error = $result ? : "An error occurred uploading file.";
             return redirect()->back()->withErrors([$error]);
-        }
     }
 }

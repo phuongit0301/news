@@ -40,4 +40,6 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::delete('upload/file', 'Admin\UploadController@deleteFile');
     Route::post('upload/folder', 'Admin\UploadController@createFolder');
     Route::delete('upload/folder', 'Admin\UploadController@deleteFolder');
+
+    Route::resource('movies', 'Admin\MoviesController');
 });

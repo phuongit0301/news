@@ -146,6 +146,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         Illuminate\Html\HtmlServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
+        Tmdb\Laravel\TmdbServiceProvider::class,
     ],
 
     /*
@@ -197,6 +198,7 @@ return [
         'Form'      => Illuminate\Html\FormFacade::class, 
         'Html'      => Illuminate\Html\HtmlFacade::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        'Tmdb' => Tmdb\Laravel\TmdbServiceProvider::class,
     ],
 
 ];

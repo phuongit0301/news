@@ -112,8 +112,10 @@
 <div class="modal fade" id="modal-file-upload">
   <div class="modal-dialog">
     <div class="modal-content">
-    {!! Form::open(array('url' => '/admin/upload/file', 'files' => true, 'method' => 'post', 'class' => 'form-horizontal')) !!}
+    <form method="POST" action="/admin/upload/file" class="form-horizontal" enctype="multipart/form-data">
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <input type="hidden" name="folder" value="{{ $folder }}">
+
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">
             ×
@@ -147,7 +149,7 @@
             Upload File
           </button>
         </div>
-      {!! Form::close() !!}
+      </form>
     </div>
   </div>
 </div>

@@ -21,6 +21,6 @@ class UploadNewFolderRequest extends Request
      * @return array
      */
     public function rules() {
-        return ['folder' => 'required', 'new_folder' => 'required',];
+        return ['folder' => 'required', 'new_folder' => 'required'];
     }
 }

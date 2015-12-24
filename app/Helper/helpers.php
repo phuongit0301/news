@@ -12,6 +12,7 @@
  */
 function human_filesize($bytes, $decimals = 2) 
 {
+	dd(567);
     $size = ['B', 'kB', 'MB', 'GB', 'TB', 'PB'];
     $factor = floor((strlen($bytes) - 1) / 3);
     
@@ -23,5 +24,6 @@ function human_filesize($bytes, $decimals = 2)
  */
 function is_image($mimeType) 
 {
+	dd(789);
     return starts_with($mimeType, 'image/');
 }

@@ -1,5 +1,10 @@
-@extends("admin.layout.index")
+@extends('layouts.admin.index')
 
 @section("content")
-	test
+	@inject('image', 'Tmdb\Helper\ImageHelper')
+
+	@foreach ($movies as $movie)
+	    {!! $image->getHtml($movie->getPosterImage(), 'w154', 260, 420) !!}
+	@endforeach
+	
 @endsection
