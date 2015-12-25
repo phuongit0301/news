@@ -82,7 +82,6 @@ class UploadController extends Controller
      */
     public function uploadFile(Request $request) 
     {
-        var_dump($_FILES);exit;
             $file = $_FILES['file'];
             $fileName = $request->get('file_name');
             $fileName = $fileName ?: $file['name'];
