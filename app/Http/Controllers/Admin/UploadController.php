@@ -82,18 +82,18 @@ class UploadController extends Controller
      */
     public function uploadFile(Request $request) 
     {
-            $file = $_FILES['file'];
-            $fileName = $request->get('file_name');
-            $fileName = $fileName ?: $file['name'];
-            $path = str_finish($request->get('folder'), '/') . $fileName;
-            $content = File::get($_FILES['file']['tmp_name']);
-            $result = $this->manager->saveFile($path, $content);
-            
-            if ($result === true) {
-                return redirect()->back()->withSuccess("File '$fileName' uploaded.");
-            }
-            
-            $error = $result ? : "An error occurred uploading file.";
-            return redirect()->back()->withErrors([$error]);
+        $file = $_FILES['file'];
+        $fileName = $request->get('file_name');
+        $fileName = $fileName ?: $file['name'];
+        $path = str_finish($request->get('folder'), '/') . $fileName;
+        $content = File::get($_FILES['file']['tmp_name']);
+        $result = $this->manager->saveFile($path, $content);
+
+        if ($result === true) {
+            return redirect()->back()->withSuccess("File '$fileName' uploaded.");
+        }
+
+        $error = $result ? : "An error occurred uploading file.";
+        return redirect()->back()->withErrors([$error]);
     }
 }
